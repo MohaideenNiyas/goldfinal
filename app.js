@@ -13,10 +13,11 @@ async function fetchGoldPrice() {
         const options = {
           method: 'GET',
           headers: {
-            'x-rapidapi-key': '0c655e2357msh16ac8167a57962ep128406jsnc952cea07045',
+            'x-rapidapi-key': 'f0dd1e4280mshf542a2e1f6d38c2p13db50jsn2451cc80f808',
             'x-rapidapi-host': 'gold-price-live.p.rapidapi.com'
           }
         };
+        
         const response = await fetch(url, options);
         // const options = {
         //     method: 'GET',
