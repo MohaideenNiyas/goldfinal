@@ -53,7 +53,7 @@ async function fetchUsers() {
             throw new Error('Not authenticated');
         }
 
-        const response = await fetch('http://127.0.0.1:8000/users', {
+        const response = await fetch('https://backend-lyod.onrender.com/users', {
             headers: {
                 'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json'
@@ -109,7 +109,7 @@ async function calculateGold() {
 
         // Send request to store the calculated gold record
         try {
-            const response = await fetch(`http://127.0.0.1:8000/calculate_gold/${userId}`, {
+            const response = await fetch(`https://backend-lyod.onrender.com/calculate_gold/${userId}`, {
                 method: 'POST',  // Ensure the method is POST
                 headers: {
                     'Content-Type': 'application/json'
