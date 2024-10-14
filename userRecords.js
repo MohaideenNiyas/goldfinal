@@ -1,4 +1,5 @@
-const API_URL = 'http://127.0.0.1:8000';
+const API_URL = 'https://backend-lyod.onrender.com';
+
 const userId = localStorage.getItem('user_id'); // Get the logged-in user's ID from localStorage
 
 // Function to fetch user details and gold records
